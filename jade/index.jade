@@ -1,0 +1,197 @@
+include mixins
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="x-ua-compatible" content="ie=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Sandra Azabache | Portafolio
+		link(href="css/bootstrap.min.css" rel="stylesheet")
+		link(href="css/animations.min.css" rel="stylesheet")
+		link(href="css/animations-ie-fix.css" rel="stylesheet")
+		link(href="css/main.css" rel="stylesheet")
+		link(href="css/bg-perpective.min.css" rel="stylesheet")
+		link(href="css/cubeportfolio.min.css" rel="stylesheet")
+		link(href="css/hovereffects.css" rel="stylesheet")
+		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css")
+		link(href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css')
+		link(href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css")
+		link(href="../fonts/LubalinGraphStd-Book.otf")
+		link(href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css')
+		meta(name="description" content="Sandra Azabache - Portafolio")
+		meta(name="author" content="Sandra Azabache")
+		link(rel="icon" type="image/png" href="images/sicon.ico")
+	body(onload="init();")
+		include head
+		#inicio.sanimate
+			.opacidad.animatedParent.diagonal
+				canvas.animated.fadeIn.slower(id="canvas" width="900" height="500" style="background-color: rgba(210, 210, 210, 0)")
+				.subtitle.animatedParent
+					h3.title.animated.fadeIn.slowest  Desarrolladora & Diseñadora Web
+				.rs-icons.animatedParent
+					a(href="https://www.facebook.com/sandramar02" target="_blank")
+						.icon.animated.fadeInUpShort
+							i.fa.fa-facebook
+					a(href="https://twitter.com/sandramar_02" target="_blank")
+						.icon.animated.fadeInUpShort
+							i.fa.fa-twitter
+					a(href="https://pe.linkedin.com/in/sandramar02" target="_blank")
+						.icon.animated.fadeInUpShort
+							i.fa.fa-linkedin
+					a(href="https://www.behance.net/sandramar02" target="_blank")
+						.icon.animated.fadeInUpShort
+							i.fa.fa-behance
+					a(href="https://github.com/sazabache" target="_blank")
+						.icon.animated.fadeInUpShort
+							i.fa.fa-github
+		#sobremi.opi
+			.container
+				.col-md-5.col-sm-6.col-xs-12
+					img.foto(src="images/sandra-azabache-foto1.jpg")
+
+				.col-md-7.col-sm-6.col-xs-12.texto
+					.desc
+						h1.sobremi Un poquito de mí
+						p.sobremip Yo soy...
+						.letrero
+							b
+								span1. 
+									desarrolladora front-end <br>
+									comunicadora <br>
+									diseñadora <br>
+									locutora <br>
+									marketera
+						img.icono(src="images/icon-design-03.svg")
+						img.icono(src="images/icon-code-02.svg")
+						img.icono(src="images/icon-com-01.svg")
+						p Diseñadora de corazón, desarrolladora web por pasión y comunicadora por vocación. Me encanta la tecnología y como ésta evoluciona. Al usarla siento que tengo el poder de comunicar cualquier cosa en cualquiera de sus expresiones.
+		#mistrabajos.mistrabajos
+			.container
+				.masthead.segment
+					.ui.page.grid
+						.column
+							.introduction
+								h1.ui.inverted.header
+										span.text Mis trabajos
+										p.textit Estos son algunos de los landing pages que he trabajado en Laboratoria.
+								.row
+									.grid(style="max-width: 980px; width: 97%; margin: 100px auto;")
+										#js-filters-awesome-work.cbp-l-filters-work
+											.cbp-filter-item.cbp-filter-item-active(data-filter='*') TODOS
+											.cbp-filter-item(data-filter='.html') HTML & CSS
+												.cbp-filter-counter
+											.cbp-filter-item(data-filter='.jade') Jade & Sass
+												.cbp-filter-counter
+											.cbp-filter-item(data-filter='.js') Javascript
+												.cbp-filter-counter
+											.cbp-filter-item(data-filter='.dsg') Diseños
+												.cbp-filter-counter
+										#js-grid-awesome-work.cbp.cbp-l-grid-work
+											.cbp-item.html
+														.cbp-item-wrapper
+															a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project1/', rel='nofollow')
+																.cbp-caption-defaultWrap
+																	img.wdt(src='images/escueladanza-01.png', alt='')
+																.cbp-caption-activeWrap
+															.cbp-l-grid-work-title Escuela de Danza
+															.cbp-l-grid-work-desc Primera semana de laboratoria.
+											.cbp-item.html
+												.cbp-item-wrapper
+													a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project2/', rel='nofollow')
+														.cbp-caption-defaultWrap
+															img.wdt(src='images/sentient-02.png', alt='')
+														.cbp-caption-activeWrap
+													.cbp-l-grid-work-title Sentient
+													.cbp-l-grid-work-desc Hackaton de Laboratoria. Primer puesto.
+											.cbp-item.html
+												.cbp-item-wrapper
+													a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project3/', rel='nofollow')
+														.cbp-caption-defaultWrap
+															img.wdt(src='images/primes-03.png', alt='')
+														.cbp-caption-activeWrap
+													.cbp-l-grid-work-title Primes
+													.cbp-l-grid-work-desc Segunda unidad - Laboratoria.
+											.cbp-item.html
+												.cbp-item-wrapper
+													a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project4/', rel='nofollow')
+														.cbp-caption-defaultWrap
+															img.wdt(src='images/flat-04.png', alt='')
+														.cbp-caption-activeWrap
+													.cbp-l-grid-work-title User Testing
+													.cbp-l-grid-work-desc Proyecto de Laboratoria (Primera semana de Marzo).
+											.cbp-item.jade
+												.cbp-item-wrapper
+													a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project5/', rel='nofollow')
+														.cbp-caption-defaultWrap
+															img.wdt(src='images/agency-05.png', alt='')
+														.cbp-caption-activeWrap
+													.cbp-l-grid-work-title Flat Theme
+													.cbp-l-grid-work-desc Proyecto de Laboratoria (Segunda semana de Marzo).
+											.cbp-item.jade
+												.cbp-item-wrapper
+													a.cbp-caption.cbp-singlePage(href='http://sazabache.github.io/project6/', rel='nofollow')
+														.cbp-caption-defaultWrap
+															img.wdt(src='images/republica-06.png', alt='')
+														.cbp-caption-activeWrap
+													.cbp-l-grid-work-title Agency Theme
+													.cbp-l-grid-work-desc Proyecto de Laboratoria (Última semana de Marzo).
+										#js-loadMore-awesome-work.cbp-l-loadMore-button
+											a.cbp-l-loadMore-link(href='http://sazabache.github.io/load/' rel="nofollow")
+												span.cbp-l-loadMore-defaultText LOAD MORE
+												span.cbp-l-loadMore-loadingText LOADING...
+												span.cbp-l-loadMore-noMoreLoading NO MORE WORKS
+								.ui.hidden.divider        
+		#habilidades.habilidades
+			.container
+				h1.hab Mis Habilidades
+				.col-md-6.col-sm-6.col-xs-12.animatedParent
+					.ds.gr.animated.rotateIn
+				.col-md-6.col-sm-6.col-xs-12.animatedParent
+					.ds.wb.animated.rotateIn
+		#contacto.contacto
+			.container
+				h1 Contáctame
+				.col-md-6
+					h3 ¡Haz llegado hasta aquí! ¡Felicidades!
+					p.contact Si te interesa mi trabajo, las habilidades que tengo o las tecnologías que conozco.!Soy lo que estás buscando!
+					p.contact ¿Estás listo para iniciar una conversación? 
+					p.contact Solo elige el medio... 
+							span Y pongámonos en contacto.
+
+				.col-md-6.mg-3
+					.row.text-center
+						a(href="#")
+								.fa.fa-whatsapp.fp
+								span +51 957544480 <br>
+						a(href="")
+								.fa.fa-skype.fp
+								span sandramar_02
+					.row.text-center
+						a(href="") sazabache.github.io/Portafolio <br>
+						a(href="mailto:sandra.azabachevillegas@gmail.com") sandra.azabachevillegas@gmail.com
+					.row.text-center
+						a(href="https://www.facebook.com/sandramar02" target="_blank")
+							.fa.fa-facebook.fp
+						a(href="https://pe.linkedin.com/in/sandramar02" target="_blank")
+							.fa.fa-linkedin.fp
+						a(href="https://www.behance.net/sandramar02" target="_blank")
+							.fa.fa-behance.fp
+						a(href="https://github.com/sazabache" target="_blank")
+							.fa.fa-github.fp
+						a(href="https://plus.google.com/u/0/109348762659589067279" target="_blank")
+							.fa.fa-google-plus.fp
+						a.farriba(href="#")
+							.arriba
+								i.fa.fa-angle-double-up
+								span Arriba
+		include footer
+	script(src='js/jquery.js')
+	script(src='js/css3-animate-it.js')
+	script(src='js/bootstrap.min.js')
+	script(src='https://code.createjs.com/createjs-2015.11.26.min.js')
+	script(src='js/Sin_20título_202.js')
+	script(src='js/jquery.cubeportfolio.min.js')
+	script(src='js/main.js')
+	script(src='js/menu-scroll.js')
+	script(src='js/final.js')
+	
