@@ -9,12 +9,26 @@
 
 ::-moz-selection {
   color: white;
-  background: #0DC0C0;
+  background: rgba(255, 68, 102, 0.63);
 }
 
 ::selection {
   color: white;
-  background: #0DC0C0;
+  background: rgba(255, 68, 102, 0.63);
+}
+
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 6px 104px 66px black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff4466;
+  outline: #ff4466;
+  border-radius: 50px;
 }
 
 /*nav*/
@@ -409,6 +423,12 @@ footer .txt-al {
   font-family: "LubalinGraphStdBook" !important;
 }
 
+.viewmore {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .viewmore span {
   font-size: 0.7em;
   font-family: "Montserrat";
@@ -436,10 +456,18 @@ footer .txt-al {
   line-height: 50px;
 }
 
+.inline {
+  display: inline-block;
+}
+
+.pdr {
+  padding-right: 15px;
+}
+
 @media (max-width: 767px) {
   canvas {
     margin-top: 19em;
-    width: 50% !important;
+    width: 60% !important;
   }
   .navbar-nav {
     transform: translateX(0%);
