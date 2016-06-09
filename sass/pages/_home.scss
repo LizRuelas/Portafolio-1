@@ -342,18 +342,7 @@ footer{
     }
 }
 
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
-    color: white;
-    background-color: #ff4466;
-    border-color: #ff4466;
-    transition: all 0.4s ease-in-out;
-}
-.btn-default {
-    color: #ff4466;
-    background-color: white;
-    border-color: #ff4466;
-    margin: 5em 0em;
-}
+
 .icon-view{
     font-size: 1.5em;
 }
@@ -379,10 +368,20 @@ footer{
         padding-left: 10px;
         line-height: 30px;
     }
+    .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+        color: white;
+        background-color: #ff4466;
+        border-color: #ff4466;
+        transition: all 0.4s ease-in-out;
+    }
+    .btn-default {
+        color: #ff4466;
+        background-color: white;
+        border-color: #ff4466;
+        margin: 5em 0em;
+    }
 }
 .farriba{
-    position: absolute;
-    right: 0px;
     text-decoration: none;
 }
 .farriba:active, .farriba:focus, .farriba:visited {
@@ -403,3 +402,29 @@ footer{
 .pdr{
     padding-right: 15px;
 }
+.cv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+        color: white;
+        background-color: #ff4466;
+        border-color: #ff4466;
+        transition: all 0.4s ease-in-out;
+    }
+    .btn-default {
+        color: #ff4466;
+        background-color: transparent;
+        border-color: #ff4466;
+        margin: 3em 0em;
+        font-size: 1.2em;
+    }
+    span{
+        padding-left: 10px;
+    }
+}
+.cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }

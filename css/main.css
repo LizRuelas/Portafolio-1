@@ -390,20 +390,6 @@ footer .txt-al {
   text-align: right;
 }
 
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
-  color: white;
-  background-color: #ff4466;
-  border-color: #ff4466;
-  transition: all 0.4s ease-in-out;
-}
-
-.btn-default {
-  color: #ff4466;
-  background-color: white;
-  border-color: #ff4466;
-  margin: 5em 0em;
-}
-
 .icon-view {
   font-size: 1.5em;
 }
@@ -436,9 +422,21 @@ footer .txt-al {
   line-height: 30px;
 }
 
+.viewmore .btn-default:hover, .viewmore .btn-default:focus, .viewmore .btn-default:active, .viewmore .btn-default:active:hover, .viewmore .btn-default:active:focus, .viewmore .btn-default:active.focus, .viewmore .btn-default.active:hover, .viewmore .btn-default.active:focus, .viewmore .btn-default.active.focus, .viewmore .open > .btn-default.dropdown-toggle:hover, .viewmore .open > .btn-default.dropdown-toggle:focus, .viewmore .open > .btn-default.dropdown-toggle.focus {
+  color: white;
+  background-color: #ff4466;
+  border-color: #ff4466;
+  transition: all 0.4s ease-in-out;
+}
+
+.viewmore .btn-default {
+  color: #ff4466;
+  background-color: white;
+  border-color: #ff4466;
+  margin: 5em 0em;
+}
+
 .farriba {
-  position: absolute;
-  right: 0px;
   text-decoration: none;
 }
 
@@ -462,6 +460,37 @@ footer .txt-al {
 
 .pdr {
   padding-right: 15px;
+}
+
+.cv1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv1 .btn-default:hover, .cv1 .btn-default:focus, .cv1 .btn-default:active, .cv1 .btn-default:active:hover, .cv1 .btn-default:active:focus, .cv1 .btn-default:active.focus, .cv1 .btn-default.active:hover, .cv1 .btn-default.active:focus, .cv1 .btn-default.active.focus, .cv1 .open > .btn-default.dropdown-toggle:hover, .cv1 .open > .btn-default.dropdown-toggle:focus, .cv1 .open > .btn-default.dropdown-toggle.focus {
+  color: white;
+  background-color: #ff4466;
+  border-color: #ff4466;
+  transition: all 0.4s ease-in-out;
+}
+
+.cv1 .btn-default {
+  color: #ff4466;
+  background-color: transparent;
+  border-color: #ff4466;
+  margin: 3em 0em;
+  font-size: 1.2em;
+}
+
+.cv1 span {
+  padding-left: 10px;
+}
+
+.cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
