@@ -493,6 +493,15 @@ footer .txt-al {
   align-items: center;
 }
 
+.version {
+  margin-left: 10px;
+}
+
+h6 {
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+
 @media (max-width: 767px) {
   canvas {
     margin-top: 19em;
